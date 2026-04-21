@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(169, 190, 227);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.inner_div {
+    height: 600px;
+    width: 300px;
+    background-color: rgb(225, 197, 251);
+    border-radius: 45px;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.logo {
+    background-color: rgb(138, 237, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#logo {
+    height: 70px;
+    margin-right: 10px;
+}
+
+#amount {
+    text-align: center;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 240px;
+    margin: auto;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.from, .to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_from, .img_to {
+    margin-right: 10px;
+}
+
+select {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(156, 241, 241);
+    text-align: center;
+    font-weight: 700;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#arrow {
+    height: 30px;
+}
+
+.result {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.convert {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    height: 40px;
+    width: 140px;
+    background-color: rgb(236, 227, 146);
+    border-radius: 45px;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+}
