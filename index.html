@@ -1,63 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Currency Converter</title>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<main class="container">
-    <div class="inner_div">
+<div class="container">
+  <h2>Currency Converter</h2>
 
-        <!-- Logo -->
-        <div class="logo">
-            <img id="logo" src="images/logo.png">
-            <h2>Currency Converter</h2>
-        </div>
+  <div class="row">
+    <select id="from"></select>
+    <img id="fromFlag" src="https://flagsapi.com/US/flat/64.png">
+  </div>
 
-        <!-- Amount -->
-        <div class="main_div">
-            <p id="amount">Amount</p>
-            <input name="amount" type="number" placeholder="Enter the amount">
-        </div>
+  <div class="row">
+    <select id="to"></select>
+    <img id="toFlag" src="https://flagsapi.com/IN/flat/64.png">
+  </div>
 
-        <form>
-            <!-- FROM -->
-            <p>Convert from</p>
-            <div class="from">
-                <img class="img_from" src="https://flagsapi.com/US/flat/64.png">
-                <select name="from"></select>
-            </div>
+  <input type="number" id="amount" placeholder="Enter amount">
 
-            <!-- Arrow -->
-            <div class="arrow">
-                <img id="arrow" src="images/arrows.png">
-            </div>
+  <button onclick="convert()">Convert</button>
 
-            <!-- TO -->
-            <p>Convert To</p>
-            <div class="to">
-                <img class="img_to" src="https://flagsapi.com/IN/flat/64.png">
-                <select name="to"></select>
-            </div>
+  <p id="result"></p>
+</div>
 
-            <!-- Result -->
-            <div>
-                <p class="result">Hello!</p>
-            </div>
+<script src="script.js"></script>
 
-            <!-- Button -->
-            <div class="convert">
-                <button class="btn">Convert</button>
-            </div>
-        </form>
-
-    </div>
-</main>
-
-<script src="scripts/script.js"></script>
 </body>
 </html>

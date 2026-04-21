@@ -1,99 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND (VISIBLE + SOFT) */
 body {
-    background-color: rgb(169, 190, 227);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  background: #8c80e9;   /* soft blue-grey (VISIBLE) */
 }
 
+/* MAIN BOX */
 .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.inner_div {
-    height: 600px;
-    width: 300px;
-    background-color: rgb(225, 197, 251);
-    border-radius: 45px;
-    border: 1px solid black;
-    box-shadow: 3px 3px black;
+/* TITLE */
+h2 {
+  margin-bottom: 20px;
 }
 
-.logo {
-    background-color: rgb(138, 237, 236);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 45px;
-    margin: 10px;
-    border: 1px solid black;
+/* ROW */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
 }
 
-#logo {
-    height: 70px;
-    margin-right: 10px;
+/* INPUTS */
+select, input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-#amount {
-    text-align: center;
-    font-weight: bold;
-}
-
+/* FULL INPUT */
 input {
-    display: block;
-    width: 240px;
-    margin: auto;
-    border: none;
-    border-bottom: 2px solid black;
-    text-align: center;
-    background: transparent;
-    margin-bottom: 20px;
+  width: 100%;
 }
 
-.from, .to {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* FLAG */
+img {
+  width: 40px;
 }
 
-.img_from, .img_to {
-    margin-right: 10px;
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  background: #6c8fbf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
 }
 
-select {
-    width: 150px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: rgb(156, 241, 241);
-    text-align: center;
-    font-weight: 700;
+button:hover {
+  background: #5676a8;
 }
 
-.arrow {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-#arrow {
-    height: 30px;
-}
-
-.result {
-    text-align: center;
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-.convert {
-    display: flex;
-    justify-content: center;
-}
-
-.btn {
-    height: 40px;
-    width: 140px;
-    background-color: rgb(236, 227, 146);
-    border-radius: 45px;
-    border: 1px solid black;
-    box-shadow: 2px 2px black;
-    cursor: pointer;
+/* RESULT */
+#result {
+  margin-top: 15px;
+  font-weight: bold;
 }
