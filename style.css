@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    background: #222;
+    color: white;
+    font-family: Arial;
+}
+
+canvas {
+    background: #555;
+    border: 3px solid white;
+}
+
+#gameOver {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
